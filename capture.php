@@ -1,22 +1,11 @@
 <?php
 
-function write_log($s) {
-	file_put_contents("/tmp/video_capture.log", "{$s}\n");
-}
-
-function microtime_float() {
-    list($usec, $sec) = explode(" ", microtime());
-    return ((float)$usec + (float)$sec);
-}
+include("common.php");
 
 $file = time();
-$extension = "avi";
-$duration = 2;
-$width = 640;
-$width = 480;
 
 $time = microtime_float();
-$command = "./wacaw --video --width {$width} --height {$height} --duration {$duration} \"recording/{$file}\"";
+$command = "{$wacaw} --video --width {$width} --height {$height} --duration {$duration} \"recording/{$file}\"";
 
 write_log("Going to capture {$duration} seconds of video to file recording/{$file}");
 
