@@ -7,4 +7,12 @@ and download wacam binary for your os
 and download ffmpeg binary for your os
 or symlink if they already exist
 
+makr directories
+
+stills
+videos
+processing
+recording
+
+
 blah blah blah
