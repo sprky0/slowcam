@@ -3,10 +3,9 @@
 // @todo make this less messy, globallish and silly
 
 function write_log($s) {
-	
-	echo __FILE__;
-	exit();
-	
+	// @todo current script name
+	// eg: explode __FILE__ on / , last token minus the extension
+	$file = "file";
 	file_put_contents("/tmp/video_{$file}.log", "{$s}\n");
 }
 
