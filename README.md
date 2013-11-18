@@ -14,3 +14,4 @@ Assign a cron entry to run every 5 minutes, which will execute the following scr
  {install_directory}/cron/php process.php
 
 The default frame size is 640x480, and the default capture rate is intended for a 2 minute interval, but these can be changed in /lib/config.php
+
