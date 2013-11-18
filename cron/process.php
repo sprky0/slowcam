@@ -8,7 +8,7 @@ $files = scandir($videos, SCANDIR_SORT_ASCENDING);
 
 foreach($files as $file) {
 	if (substr($file,-3) == $extension) {
-		write_log("I think I found {$file}");
+		write_log("I have selected {$file}");
 		break;
 	}
 }
@@ -32,3 +32,7 @@ write_log("Going to run ffmpeg to hack up thumbnails now!");
 `$command`;
 
 write_log("$file has been processed!");
+
+unlink("{$processing}/{$file}");
+
+write_log("$file has been removed from disk!");
