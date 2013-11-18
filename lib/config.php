@@ -6,10 +6,10 @@ $base = dirname(__FILE__);
 
 $config = array(
 	'extension' => "avi",
-	'duration' => 2,
+	'duration' => 4,
 	'device' => 0,
 	'width' => 640,
-	'width' => 480,
+	'height' => 480,
 	'tmp' => "{$base}/../tmp/",
 	'ffmpeg' => "{$base}/../bin/ffmpeg",
 	'wacaw' => "{$base}/../bin/wacaw",
